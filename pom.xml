@@ -10,9 +10,9 @@
 	<name>androidannotations-dagger-example</name>
 
 	<properties>
-		<platform.version>4.0.1.2</platform.version>
-		<androidannotations.version>2.7-SNAPSHOT</androidannotations.version>
-		<dagger.version>1.0-SNAPSHOT</dagger.version>
+		<platform.version>4.1.1.4</platform.version>
+		<androidannotations.version>2.7.1</androidannotations.version>
+		<dagger.version>1.0.1</dagger.version>
 	</properties>
 
 	<dependencies>
@@ -24,8 +24,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.googlecode.androidannotations</groupId>
-			<artifactId>androidannotations</artifactId>
-			<classifier>api</classifier>
+			<artifactId>androidannotations-api</artifactId>
 			<version>${androidannotations.version}</version>
 		</dependency>
 		<dependency>
@@ -35,7 +34,7 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.squareup</groupId>
+			<groupId>com.squareup.dagger</groupId>
 			<artifactId>dagger</artifactId>
 			<version>${dagger.version}</version>
 		</dependency>
@@ -49,7 +48,7 @@
 				<version>3.1.1</version>
 				<configuration>
 					<sdk>
-						<platform>14</platform>
+						<platform>17</platform>
 					</sdk>
 					<dex>
 						<jvmArguments>
@@ -88,7 +87,12 @@
 			<id>snapshots-repository</id>
 			<name>Sonatype oss snapshot repo</name>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</repository>
+        </repository>
+		<repository>
+			<id>release-repository</id>
+			<name>Sonatype oss release repo</name>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </repository>
 	</repositories>
 
 </project>
