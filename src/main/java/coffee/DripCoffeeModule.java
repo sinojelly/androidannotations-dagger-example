@@ -6,7 +6,7 @@ import android.content.Context;
 import dagger.Module;
 import dagger.Provides;
 
-@Module(entryPoints = CoffeeActivity_.class, includes = PumpModule.class)
+@Module(injects = CoffeeActivity_.class, includes = PumpModule.class)
 class DripCoffeeModule {
 
 	private final Context context;

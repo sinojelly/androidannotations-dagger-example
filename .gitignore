@@ -3,3 +3,6 @@ gen
 target
 tmp
 bin
+.gradle
+build
+
