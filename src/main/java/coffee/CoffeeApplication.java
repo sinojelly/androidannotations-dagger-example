@@ -18,7 +18,7 @@ public class CoffeeApplication extends Application {
 		super.onCreate();
 
 		long start = SystemClock.elapsedRealtime();
-		objectGraph = ObjectGraph.get(new DripCoffeeModule(this));
+		objectGraph = ObjectGraph.create(new DripCoffeeModule(this));
 		long duration = SystemClock.elapsedRealtime() - start;
 		Log.d("CoffeeApplication", "Building ObjectGraph duration in ms: " + duration);
 	}
